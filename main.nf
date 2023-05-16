@@ -16,7 +16,7 @@ process mrbayes {
         	
 	script:
 	"""
-	cat $x mrbayes_parameters/zzz_mrbayes_parameters.nex > ${x.simpleName}.mrbayes  
+	cat $x https://github.com/asadprodhan/TreeFlow/blob/main/mrbayes_parameters/zzz_mrbayes_parameters.nex > ${x.simpleName}.mrbayes  
 	mb ${x.simpleName}.mrbayes 
 		
 	"""
