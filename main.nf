@@ -16,7 +16,7 @@ process mrbayes {
         	
 	script:
 	"""
-	cat $x $PWD/mrbayes_parameters/zzz_mrbayes_parameters.nex > ${x.simpleName}.mrbayes  
+	cat $x mrbayes_parameters/zzz_mrbayes_parameters.nex > ${x.simpleName}.mrbayes  
 	mb ${x.simpleName}.mrbayes 
 		
 	"""
