@@ -38,6 +38,18 @@ conda install -c conda-forge singularity
 - Keep the following file (again, nexus format, e.g., zzz_mrbayes_parameters.nex) in the same directory. 
 
 
+```
+BEGIN mrbayes;
+lset nst=6 rates=invgamma; 
+propset ExtTBR$prob=0; 
+mcmc ngen=1000000 printfreq=100 samplefreq=1000 diagnfreq=1000 nchains=4 savebrlens=yes;
+sumt burnin=12500;
+sump burnin=12500;
+END;
+```
+
+
+
     - “zzz_mrbayes_parameters.nex” contains the analysis run parameters. You can modify them
 
 
