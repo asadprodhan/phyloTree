@@ -83,7 +83,7 @@ nextflow run asadprodhan/phyloTree -r 73f3c10
 - Visualise the tree 
 
 
-    - ‘yourAlignmentName.mrbayes.con.tre’ is the file that contains the tree with the ‘posterior probability’ supports
+    - ‘yourAlignmentName.mrbayes.con.tre’ is the file that contains the tree with the ‘posterior probability’ supports. You can visualise the tree using FigTree (http://tree.bio.ed.ac.uk/software/figtree/).
 
 
 <br />
