@@ -13,6 +13,7 @@ conda install -c bioconda nextflow
 conda install -c conda-forge singularity
 ```
 
+<br />
 
 ## **Step 2: Run phyloTree pipeline**
 
@@ -42,6 +43,8 @@ conda install -c conda-forge singularity
 nextflow run asadprodhan/phyloTree -r 73f3c10
 ```
 
+<br />
+
 
 ## **Step 3: Look at the outputs**
 
@@ -62,6 +65,10 @@ nextflow run asadprodhan/phyloTree -r 73f3c10
 
 
     - ‘yourAlignmentName.mrbayes.con.tre’ is the file that contains the tree with the ‘posterior probability’ supports
+
+
+<br />
+
 
 
 ## **Parameters in the “zzz_mrbayes_parameters.nex” file explained**
@@ -100,3 +107,8 @@ nextflow run asadprodhan/phyloTree -r 73f3c10
 
 
 - Every time the diagnostics are calculated, either a fixed number of samples (burnin) or a percentage of samples (burninfrac) from the beginning of the chain is discarded.
+
+
+- <br />
+
+
