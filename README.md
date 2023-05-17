@@ -1,4 +1,5 @@
-# **phyloTree, an automated, reproducible, and scalable workflow for Bayesian phylogenetic analysis using Nextflow and Singularity** <br />
+# **phyloTree, an automated, reproducible, and scalable workflow for Bayesian phylogenetic analysis using Nextflow and Singularity** 
+<br />
 
 
 ## **Step 1: Install Nextflow and Singularity**
@@ -13,7 +14,7 @@ conda install -c conda-forge singularity
 ```
 
 
-## **Step 2: Run phyloTree**
+## **Step 2: Run phyloTree pipeline**
 
 
 - Make a directory
@@ -70,7 +71,7 @@ nextflow run asadprodhan/phyloTree -r 73f3c10
 - “lset nst=6 rates=invgamma” sets a nucleotide substitution model called “GTR + I + G” 
 
 
-The usage of maximum likelihood method in phylogenetic analysis requires a nucleotide substitution model such as “GTR + I + G”. “GTR + I + G” is a widely used General Time Reversible (GTR) nucleotide substitution model with gamma-distributed rate variation across sites (G) and a proportion of invariable sites (I).  The invariable sites account for the static, unchanging sites in a dataset. 
+> The usage of maximum likelihood method in phylogenetic analysis requires a nucleotide substitution model such as “GTR + I + G”. “GTR + I + G” is a widely used General Time Reversible (GTR) nucleotide substitution model with gamma-distributed rate variation across sites (G) and a proportion of invariable sites (I).  The invariable sites account for the static, unchanging sites in a dataset. 
 
 
 
