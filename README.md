@@ -49,7 +49,7 @@ END;
 ```
 
 
-- “zzz_mrbayes_parameters.nex” contains the analysis run parameters. You can modify them
+- “zzz_mrbayes_parameters.nex” contains the analysis run parameters. You can modify them. See the explanation below.
 
 
 - however, you must keep the file name same, i.e., “zzz_mrbayes_parameters.nex”
