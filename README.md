@@ -29,7 +29,7 @@ conda install -c conda-forge singularity
 - Make a directory
 
 
-- Keep your alignments (nexus format, e.g., cox1_alignment.nex) in this directory
+- Keep your alignment/s (nexus format, e.g., cox1_alignment.nex) in this directory
 
 
 > Note: you can only replace ‘cox1’. Your alignment name must end up with ‘_alignment.nex’.
