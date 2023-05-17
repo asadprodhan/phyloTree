@@ -1,6 +1,14 @@
 # **phyloTree, an automated, reproducible, and scalable workflow for Bayesian phylogenetic analysis using Nextflow and Singularity** 
 <br />
 
+### **Asad Prodhan PhD** 
+
+
+**https://asadprodhan.github.io/**
+
+
+<br />
+
 
 ## **Step 1: Install Nextflow and Singularity**
 
