@@ -109,6 +109,6 @@ nextflow run asadprodhan/phyloTree -r 73f3c10
 - Every time the diagnostics are calculated, either a fixed number of samples (burnin) or a percentage of samples (burninfrac) from the beginning of the chain is discarded.
 
 
-- <br />
+<br />
 
 
