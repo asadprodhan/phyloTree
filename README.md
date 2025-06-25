@@ -77,9 +77,13 @@
 
 ## **Step 2: Make an alignment and trim it**
 
+- Alignment
+
     ```
     mafft --auto all_genomes_concatenated_together.fasta > all_genomes_alignment.fasta
     ```
+
+- Trimming
 
     ```
     trimal -in all_genomes_alignment.fasta -out trimmed_all_genomes_alignment.fasta -gappyout
