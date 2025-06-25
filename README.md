@@ -65,6 +65,9 @@
     conda install bioconda::emboss
     ```
 
+    > emboss is required for seqret that is used later on for converting the alignment file format from fasta to nex
+  
+
     ```
     conda install conda-forge::dos2unix
     ```
