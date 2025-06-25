@@ -108,6 +108,13 @@
 - Make a directory
 
 
+- Change the format of the alignment from fasta to nex to be compatible with MrBayes
+
+
+  ```
+  seqret -sequence trimmed_all_genomes_alignment.fasta -outseq trimmed_all_genomes_alignment.nex -osformat2 nexus
+  ```
+
 - Keep your alignment/s (nexus format, e.g., cox1_alignment.nex) in this directory
 
 
