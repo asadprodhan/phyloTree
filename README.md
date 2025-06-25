@@ -100,8 +100,9 @@
     iqtree2 -s trimmed_all_genomes_alignment.fasta -mset JC,F81,K2P,HKY85,GTR,SYM,TrN,JC+I,JC+G,JC+I+G,F81+I,F81+G,F81+I+G,K2P+I,K2P+G,K2P+I+G,HKY85+I,HKY85+G,HKY85+I+G,GTR+I,GTR+G,GTR+I+G,SYM+I,SYM+G,SYM+I+G,TrN+I,TrN+G,TrN+I+G -m TEST
     ```
     
+<br />
 
-## **Step 2: Run phyloTree pipeline**
+## **Step 4: Run phyloTree pipeline**
 
 
 - Make a directory
