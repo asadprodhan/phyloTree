@@ -1,32 +1,100 @@
-# **phyloTree, an automated, reproducible, and scalable workflow for Bayesian phylogenetic analysis using Nextflow and Singularity** 
+<h1 align="center">phyloTree, a Phylogenetic Analysis Workflow using Nextflow and Singularity</h1>
+
+
+<h3 align="center">M. Asaduzzaman Prodhan<sup>*</sup></h3>
+
+
+<div align="center"><b> DPIRD Diagnostics and Laboratory Services </b></div>
+
+
+<div align="center"><b> Department of Primary Industries and Regional Development </b></div>
+
+
+<div align="center"><b> 3 Baron-Hay Court, South Perth, WA 6151, Australia </b></div>
+
+
+<div align="center"><b> <sup>*</sup>Correspondence: Asad.Prodhan@dpird.wa.gov.au </b></div>
+
+
 <br />
 
-### **Asad Prodhan PhD** 
 
-
-**https://asadprodhan.github.io/**
-
-
-<br />
-
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/asadprodhan/phyloTree)
+<p align="center">
+  <a href="https://github.com/asadprodhan/phyloTree/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-GPL%203.0-yellow.svg" alt="License GPL 3.0" style="display: inline-block;"></a>
+  <a href="https://orcid.org/0000-0002-1320-3486"><img src="https://img.shields.io/badge/ORCID-green?style=flat-square&logo=ORCID&logoColor=white" alt="ORCID" style="display: inline-block;"></a>
+</p>
 
 
 <br />
 
-## **Step 1: Install Nextflow and Singularity**
 
-```
-conda install -c bioconda nextflow
-```
+## **Step 1: Create a conda environment and install the required packages**
 
 
-```
-conda install -c conda-forge singularity
-```
+- Create a conda environment
+
+  ```
+  conda create -n phyloTree
+  ```
+
+- Activate the environment
+
+  ```
+  conda activate phyloTree
+  ```
+
+- Install the following packages
+
+    ```
+    conda install -c bioconda nextflow
+    ```
+
+    ```
+    conda install -c conda-forge singularity
+    ```
+
+    ```
+    conda install -c bioconda trimal
+    ```
+
+    ```
+    conda install bioconda::iqtree
+    ```
+
+    ```
+    conda install bioconda::emboss
+    ```
+
+    ```
+    conda install conda-forge::dos2unix
+    ```
+
+    ```
+    conda install bioconda::mafft
+    ```
 
 <br />
+
+## **Step 2: Make an alignment and trim it**
+
+    ```
+    mafft --auto all_genomes_concatenated_together.fasta > all_genomes_alignment.fasta
+    ```
+
+    ```
+    trimal -in all_genomes_alignment.fasta -out trimmed_all_genomes_alignment.fasta -gappyout
+    ```
+
+<br />
+
+## **Step 3: Find the best model**
+
+    ```
+    iqtree2 -s trimmed_all_genomes_alignment.fasta -mset JC,F81,K2P,HKY85,GTR,SYM,TrN,JC+I,JC+G,JC+I+G,F81+I,F81+G,F81+I+G,K2P+I,K2P+G,K2P+I+G,HKY85+I,HKY85+G,HKY85+I+G,GTR+I,GTR+G,GTR+I+G,SYM+I,SYM+G,SYM+I+G,TrN+I,TrN+G,TrN+I+G -m TEST
+    ```
+
+    - The above command tests only the MrBayes supported models
+    
 
 ## **Step 2: Run phyloTree pipeline**
 
